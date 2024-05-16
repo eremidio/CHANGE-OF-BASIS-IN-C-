@@ -13,7 +13,7 @@
 using namespace std;
 
 //Constantes globais
-const char number_digits[37]="0123456789abcdefghijklmnopqrstuvwxyz";
+const char number_digits[63]="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 //*******************************************************************************************************************************************************************
 //DECLARAÇÃO DE FUNÇÕES
@@ -29,7 +29,7 @@ void to_dec(string, int);
 void from_dec(uint64_t number, int base){
 
  //Restrição: usaremos apenas caractéres alfa-numéricos
- assert(base<=36 && base>1);
+ assert(base<=63 && base>1);
 
  //Variáveis locais
  string number_string="";
@@ -87,7 +87,7 @@ void to_dec(string number_string, int base){
 
 
  //Restrição: usaremos apenas caractéres alfa-numéricos
- assert(base<=36 && base>1);
+ assert(base<=63 && base>1);
 
  //Variáveis locais
  uint64_t value=1, sum=0;
